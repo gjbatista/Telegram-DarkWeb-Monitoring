@@ -15,3 +15,47 @@ Bot de Telegram para monitoreo de palabras clave en sitios .onion. Utiliza `requ
    ```sh
    git clone https://github.com/tu-usuario/tu-repositorio.git
    cd tu-repositorio
+
+2. **Crear y activar un entorno  virtual:**
+    ```sh
+   python3.11 -m venv venv
+   source venv/bin/activate  # En Linux/Mac
+   .\venv\Scripts\activate  # En Windows
+3. **Instalar las dependencias:**
+   ```sh
+   pip install requests_tor beautifulsoup4 python-telegram-bot python-dotenv
+4. **Crear un archivo .env en el directorio del proyecto:**
+   ```env
+   TELEGRAM_BOT_TOKEN=TU_TELEGRAM_BOT_TOKEN
+   #Reemplaza TU_TELEGRAM_BOT_TOKEN con el token que obtuviste del BotFather.
+5. **Crear un archivo** sites.txt **en el directorio del proyecto:**
+   El archivo debe contener los sitios .onion que deseas monitorear, en el siguiente formato:
+   ```txt
+   DarkForest http://example1.onion
+   Ahmia http://example2.onion
+   ASAPmail http://example3.onion
+   CIA http://example4.onion
+   owledge http://example5.onion
+   InfoCon http://example6.onion
+   CTemplar http://example7.onion
+   Best http://example8.onion
+   Black http://example9.onion
+   Elude http://example10.onion
+
+## Uso
+1. **Ejecutar el scrip:**
+   ```sh
+   python3.11 AutomateDWTMBotTelgrm_v3.py
+2. **Interacción con el bot:**
+   * Usa ```/start``` para recibir un mensaje de bienvenida.
+   * Usa ```/search <keyword>``` para buscar una palabra clave específica en los sitios configurados.
+   * Usa ```/stop``` para detener una búsqueda en curso y recibir un resumen de los resultados hasta el momento.
+
+## Consideraciones de Seguridad
+1. **Uso de Variables de Entorno:**
+   * Asegúrate de que tu token de acceso de Telegram esté almacenado en el archivo ```.env``` para evitar exponerlo en el código público.
+2. **Validación de Datos de Entrada:**
+   * La entrada del usuario ```(keyword)``` se utiliza directamente en las búsquedas. Asegúrate de que los datos de entrada sean validados y limpiados para prevenir ataques de inyección o entradas maliciosas.
+3. **Protección contra Ataques de Denegación de Servicio (DoS):**
+   *Implementa límites de frecuencia para los comandos para evitar que el bot sea abusado por solicitudes excesivas. Esto se puede hacer rastreando las solicitudes por usuario y limitando la cantidad permitida en un período de tiempo determinado.
+
