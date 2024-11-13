@@ -19,7 +19,7 @@ Bot de Telegram para monitoreo de palabras clave en sitios .onion. Utiliza `requ
    * Guarda el token de acceso que BotFather te proporciona. Este token se utilizará en el archivo `.env`.
 
 2. **Configurar el token del bot:**
-   * > En el apartado de Instalación, paso 4 se detalla como configurar el token del bot.
+   * > En el apartado de [Instalación](https://github.com/gjbatista/Telegram-DarkWeb-Monitoring/blob/main/README.md#instalaci%C3%B3n), paso 4 se detalla como configurar el token del bot.
 
 ## Instalación
 
