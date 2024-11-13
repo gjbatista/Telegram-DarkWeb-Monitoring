@@ -11,6 +11,16 @@ Bot de Telegram para monitoreo de palabras clave en sitios .onion. Utiliza `requ
 - Python 3.11 o superior
 - Librerías Python: `requests_tor`, `beautifulsoup4`, `python-telegram-bot`
 
+## Crear el Bot de Telegram
+1. **Crear un nuevo bot con BotFather**
+   * Abre Telegram y busca `@BotFather`.
+   * Inicia una conversación con BotFather y envía el comando `/start`.
+   * Envía el comando `/newbot` y sigue las instrucciones para crear un nuevo bot.
+   * Guarda el token de acceso que BotFather te proporciona. Este token se utilizará en el archivo `.env`.
+
+2. **Configurar el token del bot:**
+   * > En el apartado de Instalación, paso 4 se detalla como configurar el token del bot.
+
 ## Instalación
 
 1. **Clonar el repositorio:**
@@ -52,15 +62,15 @@ Bot de Telegram para monitoreo de palabras clave en sitios .onion. Utiliza `requ
 2. **Interacción con el bot:**
 <p align="center"> <img width="460" height="300" src="https://github.com/user-attachments/assets/e02629f3-b8cd-43ca-87a9-9bcc39b97f75"> </p>
 
-   * Usar ```/start``` para recibir un mensaje de bienvenida.
-   * Usar ```/search <keyword>``` para buscar una palabra clave específica en los sitios configurados.
-   * Usar ```/stop``` para detener una búsqueda en curso y recibir un resumen de los resultados hasta el momento.
+   * Usar `/start` para recibir un mensaje de bienvenida.
+   * Usar `/search <keyword>` para buscar una palabra clave específica en los sitios configurados.
+   * Usar `/stop` para detener una búsqueda en curso y recibir un resumen de los resultados hasta el momento.
 
 ## Consideraciones de Seguridad
 1. **Uso de Variables de Entorno:**
-   * Asegúrate de que tu token de acceso de Telegram esté almacenado en el archivo ```.env``` para evitar exponerlo en el código público.
+   * Asegúrate de que tu token de acceso de Telegram esté almacenado en el archivo `.env` para evitar exponerlo en el código público.
 2. **Validación de Datos de Entrada:**
-   * La entrada del usuario ```(keyword)``` se utiliza directamente en las búsquedas. Asegúrate de que los datos de entrada sean validados y sanitizados para prevenir ataques de inyección o entradas maliciosas.
+   * La entrada del usuario `(keyword)` se utiliza directamente en las búsquedas. Asegúrate de que los datos de entrada sean validados y sanitizados para prevenir ataques de inyección o entradas maliciosas.
 3. **Protección contra Ataques de Denegación de Servicio (DoS):**
    *Implementa límites de frecuencia para los comandos para evitar que el bot sea abusado por solicitudes excesivas. Esto se puede hacer rastreando las solicitudes por usuario y limitando la cantidad permitida en un período de tiempo determinado.
 
