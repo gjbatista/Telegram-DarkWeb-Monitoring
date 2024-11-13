@@ -26,7 +26,7 @@ Bot de Telegram para monitoreo de palabras clave en sitios .onion. Utiliza `requ
    .\venv\Scripts\activate  # En Windows
 3. **Instalar las dependencias:**
    ```sh
-   pip install requests_tor beautifulsoup4 python-telegram-bot python-dotenv
+   pip install -r requirements.txt
 4. **Crear un archivo .env en el directorio del proyecto:**
    ```env
    TELEGRAM_BOT_TOKEN=TU_TELEGRAM_BOT_TOKEN
