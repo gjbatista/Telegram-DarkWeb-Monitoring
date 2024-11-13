@@ -60,7 +60,7 @@ Bot de Telegram para monitoreo de palabras clave en sitios .onion. Utiliza `requ
 1. **Uso de Variables de Entorno:**
    * Asegúrate de que tu token de acceso de Telegram esté almacenado en el archivo ```.env``` para evitar exponerlo en el código público.
 2. **Validación de Datos de Entrada:**
-   * La entrada del usuario ```(keyword)``` se utiliza directamente en las búsquedas. Asegúrate de que los datos de entrada sean validados y limpiados para prevenir ataques de inyección o entradas maliciosas.
+   * La entrada del usuario ```(keyword)``` se utiliza directamente en las búsquedas. Asegúrate de que los datos de entrada sean validados y sanitizados para prevenir ataques de inyección o entradas maliciosas.
 3. **Protección contra Ataques de Denegación de Servicio (DoS):**
    *Implementa límites de frecuencia para los comandos para evitar que el bot sea abusado por solicitudes excesivas. Esto se puede hacer rastreando las solicitudes por usuario y limitando la cantidad permitida en un período de tiempo determinado.
 
