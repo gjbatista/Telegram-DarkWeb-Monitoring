@@ -74,3 +74,6 @@ Bot de Telegram para monitoreo de palabras clave en sitios .onion. Utiliza `requ
 3. **Protección contra Ataques de Denegación de Servicio (DoS):**
    *Implementa límites de frecuencia para los comandos para evitar que el bot sea abusado por solicitudes excesivas. Esto se puede hacer rastreando las solicitudes por usuario y limitando la cantidad permitida en un período de tiempo determinado.
 
+# **Disclaimer**
+> Este proyecto se proporciona con fines educativos y de investigación. No se ofrece ninguna garantía sobre el funcionamiento del bot o la precisión de los resultados obtenidos. El uso de este bot para fines ilegales o no autorizados está estrictamente prohibido. Los autores del proyecto no se hacen responsables de ningún daño o consecuencia derivada del uso del bot.
+
