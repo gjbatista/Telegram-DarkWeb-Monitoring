@@ -16,7 +16,7 @@ Bot de Telegram para monitoreo de palabras clave en sitios .onion. Utiliza `requ
 1. **Clonar el repositorio:**
 
    ```sh
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+   git clone https://github.com/gjbatista/Telegram-DarkWeb-Monitoring.git
    cd tu-repositorio
 
 2. **Crear y activar un entorno  virtual:**
