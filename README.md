@@ -47,9 +47,11 @@ Bot de Telegram para monitoreo de palabras clave en sitios .onion. Utiliza `requ
    ```sh
    python3.11 AutomateDWTMBotTelgrm_v3.py
 2. **Interacción con el bot:**
-   * Usa ```/start``` para recibir un mensaje de bienvenida.
-   * Usa ```/search <keyword>``` para buscar una palabra clave específica en los sitios configurados.
-   * Usa ```/stop``` para detener una búsqueda en curso y recibir un resumen de los resultados hasta el momento.
+<p align="center"> <img width="460" height="300" src="https://github.com/user-attachments/assets/e02629f3-b8cd-43ca-87a9-9bcc39b97f75"> </p>
+
+   * Usar ```/start``` para recibir un mensaje de bienvenida.
+   * Usar ```/search <keyword>``` para buscar una palabra clave específica en los sitios configurados.
+   * Usar ```/stop``` para detener una búsqueda en curso y recibir un resumen de los resultados hasta el momento.
 
 ## Consideraciones de Seguridad
 1. **Uso de Variables de Entorno:**
